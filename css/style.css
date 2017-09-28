@@ -1,0 +1,70 @@
+*{
+  outline: 1px solid green;
+}
+.container-fluid{
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  background-color: #f4f4f4;
+  box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.5);;
+}
+.no-margin{
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.no-padding{
+  padding-left: 0  !important;
+  padding-right: 0 !important;
+}
+.header {
+    background: url(../images/fotos/MICAELA/header.jpg);
+    background-color: #f4f4f4;
+    height: 650px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.botonestopmenu{
+  margin-top: 40px;
+}
+.botonestopmenu a{
+  margin:10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  float: right;
+}
+.mensaje{
+  margin-top: 100px;
+}
+.mensaje h1{
+  font-size: 50px;
+  color: #fff;
+}
+.mensaje h2{
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+.mensaje a{
+  padding: 11px 30px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+.container a{
+  text-decoration: none;
+}
+/*SECCION EL RETO*/
+.servicios-lista li{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.servicios-lista li a{
+  text-decoration: none;
+}
+.servicios-lista li::before{
+}
+/*FIN SECCION EL RETO*/
+/*SECCION QUE HACEMOS*/
+
+/*FIN SECCION QUE HACEMOS*/

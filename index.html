@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Code en mi Cole</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+  <div class="container-fluid">
+    <section class="menu">
+      <div class="header">
+        <div class=" topmenu row no-margin">
+          <div class="col-md-3 col-xs-12">
+            <img class="logo img-responsive" src="images/logos/imagotipo_CEMC.png" style="height:100px;">
+          </div>
+          <div class="botonestopmenu right col-md-7 col-md-offset-2 hidden-xs">
+            <a href="#reto">CONTÁCTANOS</a>
+            <a href="#hacemos">NOSOTROS</a>
+            <a href="#impacto">NUESTRO IMPACTO</a>
+            <a href="#nosotros">QUÉ HACEMOS</a>
+            <a href="#contacto">EL RETO</a>
+          </div>
+        </div>
+        <div class="mensaje text-center">
+          <h1>DEJA DE USAR COMIENZA A CREAR</h1>
+          <h2>Este es tu momento para empezar a creer</h2>
+          <a href="">SOLICITA</a>
+          <a href="">ÚNETE</a>
+        </div>
+      </div>
+    </section>
+      <section class="reto">
+        <div class="container">
+          <A name="reto" id="reto"><h2>EL RETO</h2></A>
+          <div class="row original">
+              <ul class="col-md-5 col-sm-5 col-xs-12 servicios-lista list-unstyled">
+                <li><a class="1" onclick="contServicios(this)" style="color:#c19f56">NYC</a></li>
+                <li><a class="2" onclick="contServicios(this)">80%</a></li>
+                <li><a class="3" onclick="contServicios(this)">450K</a></li>
+              </ul>
+              <div class="derecha-mitad">
+                <div class="col-md-7 col-sm-7  col-xs-12 contenido1 active">
+                  <div class="row"><a href="#">
+                    <div class="servicios-img">
+                      <img src="images/fotos/YANAHUARA/header.jpg" alt="" class="img-responsive">
+                    </div>
+                  </a></div>
+                  <div class="row text-center"><p>Brecha entre lo que se enseña en las escuelas y lo que demanda el mercado laboral.</p></div>
+                    <a href="{!!url('/charterpasajeros')!!}" class="btn-saber">SABER MÁS   <span class="glyphicon glyphicon-menu-right flecha" aria-hidden="true"></span></a>
+                </div>
+                <div class="col-md-7 col-sm-7 col-xs-12 contenido2" style="display:none">
+                  <div class="row "><a href="{!!url('/charterVIP')!!}">
+                    <div class="servicios-img" style="background: url('images/charterP.jpg') no-repeat center center; background-size: cover; height: 170px;border-radius: 8px;">
+
+                    </div>
+                    {{-- <img src="images/charterP.jpg"> --}}
+                  </a></div>
+                  <div class="row "><p>80% de jóvenes que terminan el colegio no irán a una universidad.</p></div>
+                  <a href="{!!url('/charterVIP')!!}" class="btn-saber">SABER MÁS   <span class="glyphicon glyphicon-menu-right flecha" aria-hidden="true"></span></a>
+                </div>
+                <div class="col-md-7 col-sm-7 col-xs-12 contenido3" style="display:none">
+                  <div class="row"><a href="{!!url('/chartercarga')!!}">
+                    <div class="servicios-img" style="background: url('images/charterCarga.jpg') no-repeat center center; background-size: cover; height: 170px;border-radius: 8px;">
+
+                    </div>
+                    {{-- <img src="images/charterCarga.jpg"> --}}
+                  </a></div>
+                  <div class="row"><p>Déficit de 450 mil desarrolladores de tecnología en América Latina al 2019.</p></div>
+                  <a href="{!!url('/chartercarga')!!}" class="btn-saber">SABER MÁS   <span class="glyphicon glyphicon-menu-right flecha" aria-hidden="true"></span></a>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+      <section class="hacemos">
+        <div class="noticias">
+  <div class="container">
+   <section class="slider responsive">
+      <a data-toggle="modal" data-target="#noticia01">
+       <div class="noticias">
+       <h4>A Time Travel Postcard</h4>
+       <h2>¡TELECABINAS KUÉLAP <br>
+        YA ES UNA REALIDAD!</h2>
+       <img src="images/teleferico.jpg" class="img-responsive">
+       <p class="justify-content">
+        El Presidente de la República, Pedro Pablo Kuczynski, inauguró el 02 de Marzo en la provincia
+        de Luya, las Telecabinas Kuélap.
+       </p>
+     </div>
+    </a>
+    <a data-toggle="modal" data-target="#noticia02">
+   <div class='noticias noticias2'>
+     <h4>A Time Travel Postcard</h4>
+     <h2>EXPERIMENTE EL <br>
+      LUJO A BORDO</h2>
+     <img src="images/experiencialujo.jpg" class="img-responsive">
+     <p class="justify-content">
+        Antes, el querer volar, significaba depender de horarios e itinerarios
+        específicos. Con nuestra línea de negocio chárter, esto es historia.
+     </p>
+   </div>
+   </a>
+   <a data-toggle="modal" data-target="#noticia03">
+   <div class='noticias noticias3'>
+     <h4>A Time Travel Postcard</h4>
+     <h2>¡PRÓXIMOS DESTINOS<br>
+          COMERCIALES!</h2>
+     <img src="images/noticia03.jpg" class="img-responsive">
+     <p class="justify-content">
+       ATSA Airlines se compromete a aportar al turismo nacional ofertando
+       vuelos comerciales a destinos que creemos irán marcando la pauta en el futuro.
+     </p>
+   </div>
+   </a>
+   <!---<a data-toggle="modal" data-target="#noticia">
+   <div>
+     <h4>A Time Travel Postcard</h4>
+     <h2>Noticia <br>
+      04</h2>
+     <img src="images/noticia1.png" class="img-responsive">
+     <p>
+        orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+     </p>
+   </div>
+   </a>-->
+   <!--<a data-toggle="modal" data-target="#noticia">
+   <div>
+     <h4>A Time Travel Postcard</h4>
+     <h2>Noticia <br>
+      05</h2>
+     <img src="images/noticia2.png" class="img-responsive">
+     <p>
+        orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+     </p>
+   </div>
+ </a>-->
+   <!--<a data-toggle="modal" data-target="#noticia">
+   <div>
+     <h4>A Time Travel Postcard</h4>
+     <h2>Noticia <br>
+      06</h2>
+     <img src="images/noticia3.png" class="img-responsive">
+     <p>
+        orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+     </p>
+   </div>
+ </a>-->
+    </section>
+  </div>
+</div>
+
+  </div>
+</body>
+</html>
