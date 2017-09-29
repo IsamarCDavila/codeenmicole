@@ -16,7 +16,7 @@
   padding-right: 0 !important;
 }
 .header {
-    background: url(../images/fotos/MICAELA/header.jpg);
+    background: url(../images/header.jpg);
     background-color: #f4f4f4;
     height: 650px;
     background-attachment: fixed;
@@ -62,9 +62,131 @@
 .servicios-lista li a{
   text-decoration: none;
 }
-.servicios-lista li::before{
+.servicios-lista a:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 218px;
+    border-bottom: 1px solid #acaaaa;
 }
 /*FIN SECCION EL RETO*/
 /*SECCION QUE HACEMOS*/
-
+.noticias {
+  background-color:#f4f4f4;
+}
+.noticias h2, .idnoticia h2 {
+  font-family:'Merriweather',serif;
+  font-size:25px;
+  color:#000;
+}
+.idnoticia h2 {
+  padding-left: 16px;
+  padding-bottom: 20px;
+  font-weight:bold;
+  }
+.noticias h4, .idnoticia h4 {
+  font-size:18px;
+  color:#000;
+}
+.idnoticia h4 {
+margin-top: 30px;
+padding-left: 16px;
+font-weight: bold;
+  }
+.noticias p, .idnoticia p {
+  margin-top:17px;
+  color: #000;
+  font-size: 16px;
+  text-align: justify;
+}
+.idnoticia p{
+  padding-left: 16px;
+  padding-bottom: 26px
+}
+.noticias a{
+  cursor: pointer;
+  text-decoration: none;
+}
+.slick-initialized .slick-slide {
+    outline: none;
+}
+.modal-content {
+    border-radius: 0px;
+}
+.modal-backdrop {
+    opacity: 0.7 !important;
+}
+.modal {
+  text-align: center;
+}
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+button.close {
+    border: solid 2px #4a4a4a;
+    opacity: 1 !important;
+    font-size: 40px;
+    width: 40px;
+    height: 40px;
+    font-family: -webkit-body;
+    font-weight: 100;
+    outline: none;
+    margin: 31px 36px 34px 0;
+}
+#registrar button.close {
+    width: 30px;
+    height: 30px;
+    border: solid 2px #005793;
+    color: #005793;
+    opacity: 1 !important;
+    font-size: 29px;
+    font-weight: bold;
+    margin: 0px !important;
+}
+#ingresar button.close{
+  width: 30px;
+    height: 30px;
+    border: solid 2px #005793;
+    color: #005793;
+    opacity: 1 !important;
+    font-size: 29px;
+    font-weight: bold;
+    margin: 0px !important;
+}
+/*slider*/
+.slider {
+  margin:84px auto;
+}
+.slick-slide {
+  margin:2px 5px;
+  padding: 18px 15px;
+}
+.slick-slide:hover {
+    background: #fff;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5) !important;
+}
+.slick-slide img {
+  width:100%;
+}
+.slick-next::before {
+  background:url('../images/chevron-right.png') no-repeat;
+  content:"" !important;
+  display:block;
+  height:26px;
+  width:17px;
+}
+.slick-prev::before {
+  background:url('../images/chevron-left.png') no-repeat;
+  content:"" !important;
+  display:block;
+  height:26px;
+  width:17px;
+}
+.slick-prev,.slick-next {
+  width:17px;
+  height: 26px;
+}
 /*FIN SECCION QUE HACEMOS*/

@@ -5,10 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Code en mi Cole</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap-select.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/slick.js"></script>
+  <script type="text/javascript" src="js/carrouselSlick.js"></script>
+  <script src="js/jquery-ui.js" type="text/javascript"></script>
+  <script src="js/bootstrap.js" type="text/javascript"></script>
+  <script src="js/bootstrap-select.min.js" type="text/javascript"></script>
+  <script src="js/main.js" type="text/javascript"></script>
 </head>
 <body>
   <div class="container-fluid">
@@ -46,8 +55,7 @@
               <div class="derecha-mitad">
                 <div class="col-md-7 col-sm-7  col-xs-12 contenido1 active">
                   <div class="row"><a href="#">
-                    <div class="servicios-img">
-                      <img src="images/fotos/YANAHUARA/header.jpg" alt="" class="img-responsive">
+                    <div class="servicios-img" style="background: url('images/reto.jpg') no-repeat center center; background-size: cover; height: 200px;border-radius: 8px;">
                     </div>
                   </a></div>
                   <div class="row text-center"><p>Brecha entre lo que se enseña en las escuelas y lo que demanda el mercado laboral.</p></div>
@@ -55,20 +63,17 @@
                 </div>
                 <div class="col-md-7 col-sm-7 col-xs-12 contenido2" style="display:none">
                   <div class="row "><a href="{!!url('/charterVIP')!!}">
-                    <div class="servicios-img" style="background: url('images/charterP.jpg') no-repeat center center; background-size: cover; height: 170px;border-radius: 8px;">
-
+                    <div class="servicios-img" style="background: url('images/header.jpg') no-repeat center center; background-size: cover; height: 200px;border-radius: 8px;">
                     </div>
-                    {{-- <img src="images/charterP.jpg"> --}}
                   </a></div>
                   <div class="row "><p>80% de jóvenes que terminan el colegio no irán a una universidad.</p></div>
                   <a href="{!!url('/charterVIP')!!}" class="btn-saber">SABER MÁS   <span class="glyphicon glyphicon-menu-right flecha" aria-hidden="true"></span></a>
                 </div>
                 <div class="col-md-7 col-sm-7 col-xs-12 contenido3" style="display:none">
                   <div class="row"><a href="{!!url('/chartercarga')!!}">
-                    <div class="servicios-img" style="background: url('images/charterCarga.jpg') no-repeat center center; background-size: cover; height: 170px;border-radius: 8px;">
+                    <div class="servicios-img" style="background: url('images/reto.jpg') no-repeat center center; background-size: cover; height: 200px;border-radius: 8px;">
 
                     </div>
-                    {{-- <img src="images/charterCarga.jpg"> --}}
                   </a></div>
                   <div class="row"><p>Déficit de 450 mil desarrolladores de tecnología en América Latina al 2019.</p></div>
                   <a href="{!!url('/chartercarga')!!}" class="btn-saber">SABER MÁS   <span class="glyphicon glyphicon-menu-right flecha" aria-hidden="true"></span></a>
@@ -77,8 +82,8 @@
             </div>
         </div>
       </section>
-      <section class="hacemos">
-        <div class="noticias">
+
+      <div class="noticias">
   <div class="container">
    <section class="slider responsive">
       <a data-toggle="modal" data-target="#noticia01">
@@ -86,7 +91,6 @@
        <h4>A Time Travel Postcard</h4>
        <h2>¡TELECABINAS KUÉLAP <br>
         YA ES UNA REALIDAD!</h2>
-       <img src="images/teleferico.jpg" class="img-responsive">
        <p class="justify-content">
         El Presidente de la República, Pedro Pablo Kuczynski, inauguró el 02 de Marzo en la provincia
         de Luya, las Telecabinas Kuélap.
@@ -98,7 +102,6 @@
      <h4>A Time Travel Postcard</h4>
      <h2>EXPERIMENTE EL <br>
       LUJO A BORDO</h2>
-     <img src="images/experiencialujo.jpg" class="img-responsive">
      <p class="justify-content">
         Antes, el querer volar, significaba depender de horarios e itinerarios
         específicos. Con nuestra línea de negocio chárter, esto es historia.
@@ -110,50 +113,16 @@
      <h4>A Time Travel Postcard</h4>
      <h2>¡PRÓXIMOS DESTINOS<br>
           COMERCIALES!</h2>
-     <img src="images/noticia03.jpg" class="img-responsive">
+
      <p class="justify-content">
        ATSA Airlines se compromete a aportar al turismo nacional ofertando
        vuelos comerciales a destinos que creemos irán marcando la pauta en el futuro.
      </p>
    </div>
    </a>
-   <!---<a data-toggle="modal" data-target="#noticia">
-   <div>
-     <h4>A Time Travel Postcard</h4>
-     <h2>Noticia <br>
-      04</h2>
-     <img src="images/noticia1.png" class="img-responsive">
-     <p>
-        orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-     </p>
-   </div>
-   </a>-->
-   <!--<a data-toggle="modal" data-target="#noticia">
-   <div>
-     <h4>A Time Travel Postcard</h4>
-     <h2>Noticia <br>
-      05</h2>
-     <img src="images/noticia2.png" class="img-responsive">
-     <p>
-        orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-     </p>
-   </div>
- </a>-->
-   <!--<a data-toggle="modal" data-target="#noticia">
-   <div>
-     <h4>A Time Travel Postcard</h4>
-     <h2>Noticia <br>
-      06</h2>
-     <img src="images/noticia3.png" class="img-responsive">
-     <p>
-        orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-     </p>
-   </div>
- </a>-->
-    </section>
+   </section>
   </div>
 </div>
-
   </div>
 </body>
 </html>
